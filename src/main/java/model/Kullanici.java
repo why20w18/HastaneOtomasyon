@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Kullanici {
@@ -7,7 +8,7 @@ public class Kullanici {
     private int kullaniciId;
     private String kullaniciAd;
     private String kullaniciSoyad;
-    private LocalDateTime kullaniciDogTar;
+    private LocalDate kullaniciDogTar;
     private String kullaniciTelNo;
     private String kullaniciSehir;
     private String kullaniciIlce;
@@ -22,7 +23,7 @@ public class Kullanici {
     }
 
 
-    public Kullanici(int kullaniciId, String kullaniciAd, String kullaniciSoyad, LocalDateTime kullaniciDogTar, String kullaniciTelNo,
+    public Kullanici(int kullaniciId, String kullaniciAd, String kullaniciSoyad, LocalDate kullaniciDogTar, String kullaniciTelNo,
                      String kullaniciSehir, String kullaniciIlce, byte kullaniciKilo, byte kullaniciBoy, String kullaniciKanGrubu, String kullaniciCinsiyet) {
         this.kullaniciId = kullaniciId;
         this.kullaniciAd = kullaniciAd;
@@ -61,11 +62,11 @@ public class Kullanici {
         this.kullaniciSoyad = kullaniciSoyad;
     }
 
-    public LocalDateTime getKullaniciDogTar() {
+    public LocalDate getKullaniciDogTar() {
         return kullaniciDogTar;
     }
 
-    public void setKullaniciDogTar(LocalDateTime kullaniciDogTar) {
+    public void setKullaniciDogTar(LocalDate kullaniciDogTar) {
         this.kullaniciDogTar = kullaniciDogTar;
     }
 
