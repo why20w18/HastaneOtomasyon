@@ -106,7 +106,13 @@ public class KullaniciRepository implements IBaseRepository<Kullanici> {
 
     @Override
     public void delete(int id) throws SQLException {
+        String sql = "DELETE KULLANICI WHERE kullaniciId = ?;";
 
+        try(PreparedStatement ps = conn.prepareStatement(sql)){
+            ps.setInt(1,id);
+            int affectedRow = ps.executeUpdate();
+            System.out.println("affected delete : " + affectedRow);
+        }
     }
 
     @Override
