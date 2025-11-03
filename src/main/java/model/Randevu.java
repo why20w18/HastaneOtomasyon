@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 
-public class Randevu {
+public class Randevu implements IBaseModel<Randevu>{
     private int randevuId;
     private LocalDateTime randevuTar;
     private int kullaniciId;
@@ -49,5 +49,10 @@ public class Randevu {
 
     public void setSagPersId(int sagPersId) {
         this.sagPersId = sagPersId;
+    }
+
+    @Override
+    public int getId() {
+        return this.randevuId;
     }
 }

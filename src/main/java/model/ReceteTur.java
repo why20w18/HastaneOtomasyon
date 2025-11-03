@@ -1,6 +1,6 @@
 package model;
 
-public class ReceteTur {
+public class ReceteTur implements IBaseModel<ReceteTur>{
     private int receteTurId;
     private String receteTurAd;
 
@@ -27,5 +27,10 @@ public class ReceteTur {
 
     public void setReceteTurAd(String receteTurAd) {
         this.receteTurAd = receteTurAd;
+    }
+
+    @Override
+    public int getId() {
+        return this.receteTurId;
     }
 }

@@ -17,7 +17,7 @@ public class KullaniciRepository implements IBaseRepository<Kullanici> {
 
     @Override
     public void save(Kullanici kullanici) throws SQLException {
-        String sql = "INSERT INTO(kullaniciAd,kullaniciSoyad,kullaniciDogTar,kullaniciTelNo,kullaniciSehir,kullaniciIlce,kullaniciKilo,kullaniciBoy" +
+        String sql = "INSERT INTO KULLANICI(kullaniciAd,kullaniciSoyad,kullaniciDogTar,kullaniciTelNo,kullaniciSehir,kullaniciIlce,kullaniciKilo,kullaniciBoy" +
                 ",kullaniciCinsiyet,kullaniciKanGrubu) VALUES (?,?,?,?,?,?,?,?,?,?);";
 
         //try catch resources

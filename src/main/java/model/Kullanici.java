@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class Kullanici {
+public class Kullanici implements IBaseModel<Kullanici> {
 
     private int kullaniciId;
     private String kullaniciAd;
@@ -124,5 +124,10 @@ public class Kullanici {
 
     public void setKullaniciCinsiyet(String kullaniciCinsiyet) {
         this.kullaniciCinsiyet = kullaniciCinsiyet;
+    }
+
+    @Override
+    public int getId() {
+        return this.kullaniciId;
     }
 }

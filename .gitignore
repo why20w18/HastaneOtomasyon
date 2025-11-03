@@ -1,3 +1,6 @@
 .idea
 .mvn
 target
+
+### simdilik kapali
+src/main/java/app/Configuration.java

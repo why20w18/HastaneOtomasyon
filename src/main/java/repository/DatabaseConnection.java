@@ -21,6 +21,7 @@ public class DatabaseConnection {
 
     public void closeConnection(){
         try{
+
             connection.close();
         }
         catch (Exception closeEx){

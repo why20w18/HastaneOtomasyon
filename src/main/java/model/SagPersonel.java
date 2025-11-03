@@ -1,6 +1,6 @@
 package model;
 
-public class SagPersonel {
+public class SagPersonel implements IBaseModel<SagPersonel> {
     private int sagPersId;
     private String sagPersAd;
     private String sagPersSoyad;
@@ -57,5 +57,10 @@ public class SagPersonel {
 
     public void setKurulusId(int kurulusId) {
         this.kurulusId = kurulusId;
+    }
+
+    @Override
+    public int getId() {
+        return this.sagPersId;
     }
 }

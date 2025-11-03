@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 
-public class Recete {
+public class Recete implements IBaseModel<Recete>{
     private int receteId;
     private String receteKod;
     private LocalDateTime receteTar;
@@ -79,5 +79,10 @@ public class Recete {
 
     public void setSagPersId(int sagPersId) {
         this.sagPersId = sagPersId;
+    }
+
+    @Override
+    public int getId() {
+        return this.receteId;
     }
 }

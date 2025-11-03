@@ -1,6 +1,6 @@
 package model;
 
-public class Envanter {
+public class Envanter implements IBaseModel<Envanter>{
     private int envaterId;
     private short doktorKapasite;
     private short hemsireKapasite;
@@ -78,5 +78,10 @@ public class Envanter {
 
     public void setKurulusId(int kurulusId) {
         this.kurulusId = kurulusId;
+    }
+
+    @Override
+    public int getId() {
+        return this.envaterId;
     }
 }

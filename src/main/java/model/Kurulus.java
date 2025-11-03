@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Kurulus {
+public class Kurulus implements IBaseModel<Kurulus>{
     private int kurulusId;
     private String kurulusAd;
     private String kurulusSehir;
@@ -80,5 +80,10 @@ public class Kurulus {
 
     public void setKurulusSorumlusu(String kurulusSorumlusu) {
         this.kurulusSorumlusu = kurulusSorumlusu;
+    }
+
+    @Override
+    public int getId() {
+        return this.kurulusId;
     }
 }
