@@ -15,7 +15,8 @@ public class Kurulus {
 
     }
 
-    public Kurulus(int kurulusId, String kurulusAd, String kurulusSehir, String kurulusIlce, LocalDate kurulusTar, String kurulusTur, String kurulusSorumlusu) {
+    public Kurulus(int kurulusId, String kurulusAd, String kurulusSehir, String kurulusIlce, LocalDate kurulusTar,
+                   String kurulusTur, String kurulusSorumlusu) {
         this.kurulusId = kurulusId;
         this.kurulusAd = kurulusAd;
         this.kurulusSehir = kurulusSehir;
