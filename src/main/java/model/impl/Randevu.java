@@ -1,8 +1,10 @@
-package model;
+package model.impl;
+
+import model.IBaseModel;
 
 import java.time.LocalDateTime;
 
-public class Randevu implements IBaseModel<Randevu>{
+public class Randevu implements IBaseModel<Randevu> {
     private int randevuId;
     private LocalDateTime randevuTar;
     private int kullaniciId;

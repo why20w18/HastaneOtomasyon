@@ -1,6 +1,6 @@
 package repository.impl;
 
-import model.Envanter;
+import model.impl.Envanter;
 import repository.IBaseRepository;
 
 import java.sql.Connection;
@@ -19,7 +19,7 @@ public class EnvaterRepository implements IBaseRepository<Envanter> {
 
     @Override
     public void save(Envanter env) throws SQLException {
-        String sql = "INSERT INTO ENVANTER() VALUES (doktorKapasite,hemsireKapasite,yardimciSagKapasite,yatakKapasite,ambulansSay,kurulusId)" +
+        String sql = "INSERT INTO ENVANTER(doktorKapasite,hemsireKapasite,yardimciSagKapasite,yatakKapasite,ambulansSay,kurulusId)" +
                 " VALUES (?,?,?,?,?,?);";
 
         try(PreparedStatement ps = conn.prepareStatement(sql)){

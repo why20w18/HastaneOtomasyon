@@ -1,20 +1,20 @@
 package service.impl;
 
-import model.Kullanici;
+import model.impl.Kullanici;
 import repository.impl.KullaniciRepository;
 import service.BaseService;
-import service.IBaseService;
 
-import java.sql.SQLException;
-import java.util.List;
-
-public class KullaniciService  {
+public class KullaniciService extends BaseService<Kullanici,KullaniciRepository> {
 
     KullaniciRepository repo;
 
     public  KullaniciService(KullaniciRepository repo){
+        super(repo);
         this.repo = repo;
     }
+
+
+
 
 
 }

@@ -20,12 +20,19 @@ public class DatabaseConnection {
     }
 
     public void closeConnection(){
-        try{
-
-            connection.close();
+        if(connection == null){
+            System.out.println("CONNECTION BOSTUR KAPATILMADI !");
+            return;
         }
-        catch (Exception closeEx){
-            System.out.println(closeEx.getMessage());
+        try{
+            if(!connection.isClosed()){
+                connection.close();
+            }
+        }
+        catch (SQLException sqlException){
+            System.err.printf("[EXCEPTION_HO_%s.closeConnection()] %s%n",
+                    this.getClass().getSimpleName(),sqlException.getMessage()
+                    );
         }
     }
 

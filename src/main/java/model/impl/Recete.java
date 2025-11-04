@@ -1,8 +1,10 @@
-package model;
+package model.impl;
+
+import model.IBaseModel;
 
 import java.time.LocalDateTime;
 
-public class Recete implements IBaseModel<Recete>{
+public class Recete implements IBaseModel<Recete> {
     private int receteId;
     private String receteKod;
     private LocalDateTime receteTar;

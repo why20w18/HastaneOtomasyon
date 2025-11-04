@@ -1,6 +1,6 @@
 package repository.impl;
 
-import model.SagPersonel;
+import model.impl.SagPersonel;
 import repository.IBaseRepository;
 
 import java.sql.Connection;

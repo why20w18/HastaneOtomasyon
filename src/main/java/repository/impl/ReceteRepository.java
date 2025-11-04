@@ -1,6 +1,6 @@
 package repository.impl;
 
-import model.Recete;
+import model.impl.Recete;
 import repository.IBaseRepository;
 
 import java.sql.*;

@@ -1,10 +1,9 @@
 package repository.impl;
 
-import model.Kurulus;
+import model.impl.Kurulus;
 import repository.IBaseRepository;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 

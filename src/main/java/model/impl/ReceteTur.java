@@ -1,6 +1,8 @@
-package model;
+package model.impl;
 
-public class ReceteTur implements IBaseModel<ReceteTur>{
+import model.IBaseModel;
+
+public class ReceteTur implements IBaseModel<ReceteTur> {
     private int receteTurId;
     private String receteTurAd;
 

@@ -1,6 +1,6 @@
 package repository.impl;
 
-import model.Randevu;
+import model.impl.Randevu;
 import repository.IBaseRepository;
 
 import java.sql.*;

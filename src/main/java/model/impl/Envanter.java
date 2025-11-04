@@ -1,6 +1,8 @@
-package model;
+package model.impl;
 
-public class Envanter implements IBaseModel<Envanter>{
+import model.IBaseModel;
+
+public class Envanter implements IBaseModel<Envanter> {
     private int envaterId;
     private short doktorKapasite;
     private short hemsireKapasite;

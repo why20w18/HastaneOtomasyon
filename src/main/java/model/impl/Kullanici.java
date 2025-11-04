@@ -1,7 +1,8 @@
-package model;
+package model.impl;
+
+import model.IBaseModel;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Kullanici implements IBaseModel<Kullanici> {
 

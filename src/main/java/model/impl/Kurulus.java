@@ -1,8 +1,10 @@
-package model;
+package model.impl;
+
+import model.IBaseModel;
 
 import java.time.LocalDate;
 
-public class Kurulus implements IBaseModel<Kurulus>{
+public class Kurulus implements IBaseModel<Kurulus> {
     private int kurulusId;
     private String kurulusAd;
     private String kurulusSehir;

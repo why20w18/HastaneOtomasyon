@@ -1,4 +1,6 @@
-package model;
+package model.impl;
+
+import model.IBaseModel;
 
 public class SagPersonel implements IBaseModel<SagPersonel> {
     private int sagPersId;

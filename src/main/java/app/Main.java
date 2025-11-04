@@ -1,8 +1,9 @@
 package app;
 
-import model.Kullanici;
+import model.impl.Kullanici;
 import repository.DatabaseConnection;
 import repository.impl.KullaniciRepository;
+import service.impl.KullaniciService;
 
 import java.sql.Connection;
 import java.time.LocalDate;
@@ -17,9 +18,11 @@ public class Main {
                 Configuration.DB_NAME.getConfig()
                 );
         Connection connection = databaseConnection.getConnection();
+        if(connection == null)
+            return;
 
         KullaniciRepository kullaniciRepository = new KullaniciRepository(connection);
-//        KullaniciService kullaniciService = new KullaniciService(kullaniciRepository);
+        KullaniciService kullaniciService = new KullaniciService(kullaniciRepository);
 
         try {
             Kullanici yeni = new Kullanici();
@@ -34,12 +37,12 @@ public class Main {
             yeni.setKullaniciCinsiyet("E");
             yeni.setKullaniciKanGrubu("A RH+");
 
-//            kullaniciService.addKullanici(yeni);
+           kullaniciService.addModel(yeni);
 
             System.out.println("EKLENDI !");
         }
         catch (Exception e) {
-            System.out.println("HATA : " + e.getMessage());
+            System.out.println("HATA_MAIN : " + e.getMessage());
         }
         finally {
             databaseConnection.closeConnection();

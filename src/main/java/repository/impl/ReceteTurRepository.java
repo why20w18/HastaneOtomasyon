@@ -1,6 +1,6 @@
 package repository.impl;
 
-import model.ReceteTur;
+import model.impl.ReceteTur;
 import repository.IBaseRepository;
 
 import java.sql.Connection;
